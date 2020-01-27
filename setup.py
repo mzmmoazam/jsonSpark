@@ -11,7 +11,7 @@ setuptools.setup(
     description="This is a wrapper package for pyspark to process json files. It pythonifies the json pyspark object.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/mzmmoazam/",
+    url="https://github.com/mzmmoazam/jsonSpark",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
