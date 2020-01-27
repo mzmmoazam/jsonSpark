@@ -21,7 +21,7 @@ df = jsonSpark(df)
 `
 df.printSchema()
 `
-<br>
+* Display the Data<br>
 `
 df.show()
 `
@@ -30,4 +30,8 @@ df.show()
 df["key1"]["key2"]["key3"]["key4"].show()
 `
 
+* You can use the pyspark functions by converting the object back to pyspark object.<br>
+`
+pysparkObject = df._toDF()
+`
 ### I will update the documentation and include a working example soon .... 
