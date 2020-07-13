@@ -4,7 +4,10 @@ This package is meant to give a python simplicity and feel to pyspark while hand
 
 It is very simple to use and doesn't need extra information if you are using python.
 
-Steps:
+# Installation
+`pip install jsonSpark`
+
+# Sample Usage:
 * Import the package<Br>
     `
     import jsonSpark
