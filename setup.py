@@ -1,7 +1,15 @@
 import setuptools
+import os
+try:  # for pip >= 10
+    from pip._internal.req import parse_requirements
+    from pip._internal.network.session import PipSession
+except ImportError:  # for pip <= 9.0.3
+    from pip.req import parse_requirements
+    from pip.download import PipSession
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
+requirements = parse_requirements(os.path.join(os.path.dirname(__file__), 'requirements.txt'), session=PipSession())
 
 setuptools.setup(
     name="jsonSpark",
@@ -19,7 +27,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    install_requires=[
-        'pyspark',
-    ]
+    install_requires=[str(requirement.requirement) for requirement in requirements]
 )
