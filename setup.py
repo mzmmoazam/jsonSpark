@@ -13,7 +13,7 @@ requirements = parse_requirements(os.path.join(os.path.dirname(__file__), 'requi
 
 setuptools.setup(
     name="jsonSpark",
-    version="0.0.1",
+    version="0.0.2",
     author="mzm",
     author_email="mzm.moazam@gmail.com",
     description="This is a wrapper package for pyspark to process json files. It pythonifies the json pyspark object.",
